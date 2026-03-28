@@ -1,4 +1,0 @@
-interface:
-  display_name: "Python LSP Workflow"
-  short_description: "Guide Pyright LSP use in Codex."
-  default_prompt: "Use lsmcp pyright tools to inspect Python code before editing."

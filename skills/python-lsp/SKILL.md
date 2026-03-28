@@ -1,13 +1,13 @@
 ---
-name: python-lsp-workflow
-description: Use this skill when Codex needs Python symbol-aware navigation or diagnostics through the bundled Pyright-backed lsmcp tools, especially for `.py`, `.pyi`, and `.pyw` files, before editing unfamiliar code, tracing definitions or references, or checking semantic errors.
+name: python-lsp
+description: Use this skill when Codex needs Python symbol-aware navigation, definitions, references, hover details, or diagnostics for `.py`, `.pyi`, and `.pyw` files before editing unfamiliar code, making refactors, or validating semantic issues.
 ---
 
-# Python Lsp Workflow
+# Python Lsp
 
 ## Overview
 
-Use the plugin's lsmcp tools before making non-trivial Python edits. Prefer these tools when plain text search is too weak to answer symbol-level questions safely.
+Use the plugin's Python LSP tools before making non-trivial Python edits. Prefer these tools when plain text search is too weak to answer symbol-level questions safely.
 
 ## Quick Start
 
@@ -40,10 +40,10 @@ Use the plugin's lsmcp tools before making non-trivial Python edits. Prefer thes
 ## Constraints
 
 - Treat LSP output as guidance, not proof. If the output looks incomplete, inspect the source file directly.
-- This plugin is fixed to lsmcp with the `pyright` preset. Treat its output as Pyright-backed semantic guidance.
+- This plugin currently implements those Python LSP tools through `lsmcp` with the `pyright` preset, but the skill should be understood as a Python LSP capability, not as an implementation-specific workflow.
 - Use repository-relative paths and a stable workspace root whenever possible so the language server can resolve imports correctly.
-- If diagnostics are empty but the user reports issues, mention that Pyright may need project configuration or import roots to reflect the real environment.
+- If diagnostics are empty but the user reports issues, mention that project configuration or import roots may be incomplete.
 
 ## References
 
-- See `references/tooling.md` for the plugin architecture and the main lsmcp tool names to prefer.
+- See `references/tooling.md` for the tool list and the current plugin implementation details.

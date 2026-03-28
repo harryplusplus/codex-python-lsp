@@ -1,7 +1,7 @@
 {
   "name": "codex-python-lsp",
   "version": "0.1.0",
-  "description": "Codex plugin package that runs lsmcp with the pyright preset for Python language intelligence.",
+  "description": "Codex plugin package that provides Python LSP tools for semantic navigation and diagnostics.",
   "author": {
     "name": "[TODO: Author Name]",
     "email": "[TODO: author@example.com]",
@@ -23,8 +23,8 @@
   "apps": "./.app.json",
   "interface": {
     "displayName": "Codex Python LSP",
-    "shortDescription": "Python language intelligence for Codex via MCP.",
-    "longDescription": "Adds Pyright-backed Python navigation, symbol lookup, and diagnostics to Codex by shipping an npm plugin package that runs lsmcp with the pyright preset and a bundled workflow skill.",
+    "shortDescription": "Python LSP tools for Codex.",
+    "longDescription": "Adds Python LSP navigation, symbol lookup, and diagnostics to Codex through MCP, plus a bundled skill that teaches Codex when to use those tools during Python work.",
     "developerName": "[TODO: Developer or Team Name]",
     "category": "Developer Tools",
     "capabilities": [

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python LSP"
+  short_description: "Guide Python LSP use in Codex."
+  default_prompt: "Use Python LSP tools before editing unfamiliar Python code."
