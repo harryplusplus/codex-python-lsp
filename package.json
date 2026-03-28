@@ -1,0 +1,26 @@
+{
+  "name": "codex-python-lsp",
+  "version": "0.1.0",
+  "description": "Codex plugin package that runs lsmcp with the pyright preset for Python language intelligence.",
+  "type": "module",
+  "bin": {
+    "codex-python-lsp": "./bin/codex-python-lsp.mjs"
+  },
+  "files": [
+    "bin",
+    ".codex-plugin",
+    ".mcp.json",
+    ".app.json",
+    "hooks.json",
+    "skills",
+    "assets",
+    "README.md"
+  ],
+  "dependencies": {
+    "@mizchi/lsmcp": "0.10.0",
+    "pyright": "1.1.408"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

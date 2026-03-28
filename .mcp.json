@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "python-lsp": {
+      "command": "node",
+      "args": [
+        "./bin/codex-python-lsp.mjs"
+      ]
+    }
+  }
+}

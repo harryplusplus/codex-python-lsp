@@ -1,0 +1,50 @@
+{
+  "name": "codex-python-lsp",
+  "version": "0.1.0",
+  "description": "Codex plugin package that runs lsmcp with the pyright preset for Python language intelligence.",
+  "author": {
+    "name": "[TODO: Author Name]",
+    "email": "[TODO: author@example.com]",
+    "url": "[TODO: https://github.com/author]"
+  },
+  "homepage": "[TODO: https://github.com/author/codex-python-lsp]",
+  "repository": "[TODO: https://github.com/author/codex-python-lsp]",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "plugin",
+    "python",
+    "lsp",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Codex Python LSP",
+    "shortDescription": "Python language intelligence for Codex via MCP.",
+    "longDescription": "Adds Pyright-backed Python navigation, symbol lookup, and diagnostics to Codex by shipping an npm plugin package that runs lsmcp with the pyright preset and a bundled workflow skill.",
+    "developerName": "[TODO: Developer or Team Name]",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Inspect"
+    ],
+    "websiteURL": "[TODO: https://github.com/author/codex-python-lsp]",
+    "privacyPolicyURL": "[TODO: https://example.com/privacy]",
+    "termsOfServiceURL": "[TODO: https://example.com/terms]",
+    "defaultPrompt": [
+      "Use Python LSP tools to inspect this repository before editing.",
+      "Find the definition and references for this Python symbol.",
+      "Summarize the top diagnostics in the current Python file."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot1.png"
+    ]
+  }
+}
